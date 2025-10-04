@@ -1,102 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Menampilkan Data</title>
-    <link href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/vendor/twbs/bootstrap/dist/assets/style.css" rel="stylesheet">
-</head>
-
-<body>
+    <title>Membuat Template Website Bootstrap</title>
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/twbs/bootstrap/dist/assets/style.css" rel="stylesheet">
+  </head>
+  <body>
     <div class="container">
-        <!--Bagian Header -->
-        <div class="row">
-            <div class="col-md-12 header" id="site-header">
-                <header>
-                    <h1 class="title-site">Belajar Bootstrap</h1>
-                    <p class="description">Belajar Membuat Template Website Dengan Bootstrap</p>
-                </header>
-                <nav class="menus">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <!-- Bagian Header (sama seperti index.html) -->
+      <div class="row">
+        <div class="col-md-12 header" id="site-header">
+          <header>
+            <h1 class="title-site">Belajar Bootstrap</h1>
+            <p class="description">Belajar Membuat Template Website Dengan Bootstrap</p>
+          </header>
+          <nav class="menus">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Portfolio</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <div class="row">
-            <div class="col-md-8 articles" id="site-content">
-                <button type="button" class="btn btn-primary">Tambah Data</button>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Nama Belakang</th>
-                            <th>Nama Email</th>
-                            <th>Jurusan</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Andi Purnomo</td>
-                            <td>andy@umm.ac.id</td>
-                            <td>Teknik Informatika</td>
-                            <td>
-                                <button type="button" class="btn btn-info">Edit</button>
-                                <button type="button" class="btn btn-success">Detail</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Bagus Wardana</td>
-                            <td>bagus@umm.ac.id</td>
-                            <td>Teknik Informatika</td>
-                            <td>
-                                <button type="button" class="btn btn-info">Edit</button>
-                                <button type="button" class="btn btn-success">Detail</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Mabadi'ul Hasan</td>
-                            <td>hasan@umm.ac.id</td>
-                            <td>Teknik Informatika</td>
-                            <td>
-                                <button type="button" class="btn btn-info">Edit</button>
-                                <button type="button" class="btn btn-success">Detail</button>
-                                <button type="button" class="btn btn-danger">Hapus</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-4 sidebar" id="site-sidebar">
-                <aside class="widgets">
-                    <h3 class="widget-title">Menu</h3>
-                    <ul>
-                        <li><a href="#">Olahraga</a></li>
-                        <li><a href="#">Politik</a></li>
-                        <li><a href="#">Hiburan</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Sepakbola</a></li>
-                    </ul>
-                </aside>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 articles" id="site-content">
+          <button type="button" class="btn btn-primary">Tambah Data</button>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nama Belakang</th>
+                <th>Nama Email</th>
+                <th>Jurusan</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Andi Purnomo</td>
+                <td>andy@umm.ac.id</td>
+                <td>Teknik Informatika</td>
+                <td>
+                  <button type="button" class="btn btn-info">Edit</button>
+                  <button type="button" class="btn btn-success">Detail</button>
+                  <button type="button" class="btn btn-danger">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Bagus Wardana</td>
+                <td>bagus@umm.ac.id</td>
+                <td>Teknik Informatika</td>
+                <td>
+                  <button type="button" class="btn btn-info">Edit</button>
+                  <button type="button" class="btn btn-success">Detail</button>
+                  <button type="button" class="btn btn-danger">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Mabadi'ul Hasan</td>
+                <td>hasan@umm.ac.id</td>
+                <td>Teknik Informatika</td>
+                <td>
+                  <button type="button" class="btn btn-info">Edit</button>
+                  <button type="button" class="btn btn-success">Detail</button>
+                  <button type="button" class="btn btn-danger">Hapus</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-        <div class="row">
-            <div class="col-md-12 footer" id="site-footer">
-                <footer class="copyright text-center">
-                    <p>&copy; 2015 onphpid.com</p>
-                </footer>
-            </div>
+        <div class="col-md-4 sidebar" id="site-sidebar">
+          <!-- Sidebar sama seperti index.html -->
+          <aside class="widgets">
+            <h3 class="widget-title">Menu</h3>
+            <ul>
+              <li><a href="#">Olahraga</a></li>
+              <li><a href="#">Politik</a></li>
+              <li><a href="#">Hiburan</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Sepakbola</a></li>
+            </ul>
+          </aside>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 footer" id="site-footer">
+          <footer class="copyright text-center"><p>&copy; 2015 onphpid.com</p></footer>
+        </div>
+      </div>
     </div>
-
-    <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
