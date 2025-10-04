@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Membuat Template Website Bootstrap</title>
-    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/twbs/bootstrap/dist/assets/style.css" rel="stylesheet">
-  </head>
-  <body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
-        <!--Bagian Header -->
+        <!-- Bagian Header -->
         <div class="row">
             <div class="col-md-12 header" id="site-header">
                 <header>
@@ -19,31 +17,38 @@
                 </header>
                 <nav class="menus">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="nav-link active" data-target="berita">Home</a></li>
+                        <li><a href="#" class="nav-link" data-target="form">Form</a></li>
+                        <li><a href="#" class="nav-link" data-target="data">Data</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Portfolio</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="row">
+
+        <!-- Bagian Berita -->
+        <div class="row content-section active-section" id="berita-section">
             <div class="col-md-8 articles" id="site-content">
                 <article class="posts">
                     <h2 class="title-post">Suzuki Masih Fokus Bangun Tim Utama di MotoGP</h2>
                     <div class="meta-post">
-                        <span><em class="glyphicon glyphicon-user"></em> Administrator</span>
-                        <span><em class="glyphicon glyphicon-time"></em> Jumat, 22 Februari 2019 – 10:42 WIB</span>
+                        <span>�️ Administrator</span>
+                        <span>⏰ Jumat, 22 Februari 2019 - 10:42 WIB</span>
                     </div>
                     <div class="content">
-                        <p>jpnn.com — Suzuki sudah mengambil langkah untuk menyiapkan tim satelit mereka di MotoGP paling cepat pada musim balap tahun depan. Pasalnya, tinggal Suzuki dan Aprilia yang belum memiliki tim satelit di MotoGP.</p>
+                        <p>jpmn.com — Suzuki sudah mengambil langkah untuk menyiapkan tim satelit mereka di MotoGP paling cepat pada musim balap tahun depan. Pasalnya, tinggal Suzuki dan Aprilia yang belum memiliki tim satelit di MotoGP.</p>
                     </div>
-                    <h2 class="title-post">Piala AFF U-22, Anda Yakin Timnas Indonesia Mampu Kalahkah Kamboja?</h2>
+                </article>
+
+                <article class="posts">
+                    <h2 class="title-post">Piala AFF U-22, Anda Yakin Timnas Indonesia Mampu Kalahkan Kamboja?</h2>
                     <div class="meta-post">
-                        <span><em class="glyphicon glyphicon-user"></em> Administrator</span>
-                        <span><em class="glyphicon glyphicon-time"></em> Jumat, 22 Februari 2019 – 10:42 WIB</span>
+                        <span>�️ Administrator</span>
+                        <span>⏰ Jumat, 22 Februari 2019 - 10:42 WIB</span>
                     </div>
                     <div class="content">
-                        <p>jpnn.com, PNOM PENH — Pelatih Timnas Indonesia U-22 Indra Sjafri memastikan bakal menampilkan skuat terbaiknya dalam laga penentuan melawan Kamboja di laga pamungkas grup B Piala AFF U-22 di National Stadium, Phnom Penh, Kamboja, Jumat (22/2) malam, siaran langsung RCTI pukul 18.30 WIB</p>
+                        <p>jpmn.com, PMOM PEMH — Pelatih Timnas Indonesia U-22 Indra Sjafri memastikan bakal menampilkan skuat terbaknya dalam laga penentuan melawan Kamboja di laga pamungkas grup B Piala AFF U-22 di National Stadium, Phnom Penh, Kamboja, Jumat (22/2) malam, siaran langsung RCTI pukul 18.30 WIB</p>
                     </div>
                 </article>
             </div>
@@ -60,12 +65,145 @@
                 </aside>
             </div>
         </div>
+
+        <!-- Bagian Form -->
+        <div class="row content-section" id="form-section">
+            <div class="col-md-12">
+                <div class="articles">
+                    <h1>Form Pendaftaran</h1>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="namaDepan">Nama Depan</label>
+                            <input class="form-control" type="text" id="namaDepan">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="namaBelakang">Nama Belakang</label>
+                            <input class="form-control" type="text" id="namaBelakang">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="tanggalLahir">Tanggal Lahir</label>
+                            <input class="form-control" type="date" id="tanggalLahir">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="alamat">Alamat</label>
+                            <textarea class="form-control" rows="5" id="alamat"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="jenisKelamin"> Laki-Laki
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="jenisKelamin"> Perempuan
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="jurusan">Jurusan</label>
+                            <select class="form-control" id="jurusan">
+                                <option>Teknik Informatika</option>
+                                <option>Teknik Elektro</option>
+                                <option>Teknik Sipil</option>
+                                <option>Teknik Industri</option>
+                                <option>Teknik Mesin</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Hobi</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Membaca
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Olahraga
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Kuliner
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-success back-btn">Kembali</button>
+                            <button type="button" class="btn btn-warning">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Data -->
+        <div class="row content-section" id="data-section">
+            <div class="col-md-12">
+                <div class="articles">
+                    <button type="button" class="btn btn-primary">Tambah Data</button>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nama Belakang</th>
+                                    <th>Email</th>
+                                    <th>Jurusan</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Andi Purnomo</td>
+                                    <td>andy@umm.ac.id</td>
+                                    <td>Teknik Informatika</td>
+                                    <td>
+                                        <button type="button" class="btn btn-info">Edit</button>
+                                        <button type="button" class="btn btn-success">Detail</button>
+                                        <button type="button" class="btn btn-danger">Hapus</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bagus Wardana</td>
+                                    <td>bagus@umm.ac.id</td>
+                                    <td>Teknik Informatika</td>
+                                    <td>
+                                        <button type="button" class="btn btn-info">Edit</button>
+                                        <button type="button" class="btn btn-success">Detail</button>
+                                        <button type="button" class="btn btn-danger">Hapus</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mabadi'ul Hasan</td>
+                                    <td>hasan@umm.ac.id</td>
+                                    <td>Teknik Informatika</td>
+                                    <td>
+                                        <button type="button" class="btn btn-info">Edit</button>
+                                        <button type="button" class="btn btn-success">Detail</button>
+                                        <button type="button" class="btn btn-danger">Hapus</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Footer -->
         <div class="row">
             <div class="col-md-12 footer" id="site-footer">
-                <footer class="copyright text-center"><p>&copy; 2015 onphpid.com</p></footer>
+                <footer class="copyright text-center">
+                    <p>&copy; 2015 onphpid.com</p>
+                </footer>
             </div>
         </div>
     </div>
-    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
